@@ -7,8 +7,9 @@ class UnsortedType
     struct NodeType
     {
         ItemType info;
-        NodeType* next = NULL;
+        NodeType* next;
     };
+
 public:
 
     UnsortedType();
