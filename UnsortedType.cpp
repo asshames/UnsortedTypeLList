@@ -15,7 +15,7 @@ UnsortedType<ItemType>::UnsortedType()
 template <class ItemType>
 UnsortedType<ItemType>::~UnsortedType()
 {
-    //make_empty();
+    make_empty();
 }
 
 template <class ItemType>
@@ -76,6 +76,23 @@ ItemType UnsortedType<ItemType>::get_item(ItemType item, bool &found)
         cout<<"Item is not found"<<endl;
 
     return returnItem;
+}
+
+template <class ItemType>
+void UnsortedType<ItemType>::make_empty()
+{
+    NodeType* locationToDelete = NULL;
+    while (listData != NULL)
+    {
+        locationToDelete = listData;
+        listData = listData->next;
+        if (locationToDelete == currentPosition)
+        {
+            currentPosition = currentPosition->next;
+        }
+        delete locationToDelete;
+        length--;
+    }
 }
 
 

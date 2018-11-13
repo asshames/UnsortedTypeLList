@@ -1,0 +1,29 @@
+[33mcommit f0ccb6bddbe8a2c46cf26a6e9f7eb46a13330e35[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mShames/master[m[33m)[m
+Author: Shames <assamialomarshames@gmail.com>
+Date:   Wed Nov 14 02:19:46 2018 +0600
+
+    in unsortedtype.cpp file create a put_item() function it works on main
+
+[33mcommit 7ce4feab006afda19706adff1fc092b6b429e285[m
+Author: Shames <assamialomarshames@gmail.com>
+Date:   Wed Nov 14 02:14:51 2018 +0600
+
+    in Unsorted.cpp create is_full() function done and it works
+
+[33mcommit 925569dd86e16568fb80b4b250235fd65b77cacc[m
+Author: Shames <assamialomarshames@gmail.com>
+Date:   Wed Nov 14 02:08:38 2018 +0600
+
+    builting Unsorted.cpp file getlenght function done
+
+[33mcommit 49076a43ade05b01655073523cd91a0f9cff87e0[m
+Author: Shames <assamialomarshames@gmail.com>
+Date:   Wed Nov 14 01:52:50 2018 +0600
+
+    built UnsortedType,h file
+
+[33mcommit da533d4215aa8b73b72f6476aaf9ed7327764b5e[m
+Author: Shames <assamialomarshames@gmail.com>
+Date:   Wed Nov 14 01:44:40 2018 +0600
+
+    Create a project named UnsortedTypeLList

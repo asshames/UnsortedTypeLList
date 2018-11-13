@@ -13,7 +13,12 @@ int main()
     else
         cout<<"list is not full"<<endl;
     Mylist.put_item(4);
+    Mylist.put_item(5);
+    Mylist.put_item(6);
     bool flag;
+    Mylist.get_item(4,flag);
+
+    Mylist.make_empty();
     Mylist.get_item(4,flag);
 
 
