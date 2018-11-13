@@ -20,6 +20,7 @@ public:
     void make_empty();
     ItemType get_item(ItemType, bool&);
     void put_item(ItemType);
+    bool delete_item(ItemType);
     void reset_list();
     ItemType get_next_item();
 

@@ -20,6 +20,14 @@ int main()
 
     Mylist.make_empty();
     Mylist.get_item(4,flag);
+    Mylist.put_item(4);
+    Mylist.put_item(5);
+    Mylist.put_item(6);
+    flag = Mylist.delete_item(5);
+    if(flag)
+        cout<<"Item is delete"<<endl;
+    else
+        cout<<"Item is not delete"<<endl;
 
 
     return 0;

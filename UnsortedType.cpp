@@ -95,4 +95,48 @@ void UnsortedType<ItemType>::make_empty()
     }
 }
 
+template <class ItemType>
+void UnsortedType<ItemType>::reset_list()
+{
+    currentPosition = NULL;
+}
+
+template <class ItemType>
+bool UnsortedType<ItemType>::delete_item(ItemType item)
+{
+    NodeType* currentLocation = listData;
+    NodeType* previousLocation = NULL;
+    bool found = false;
+    if(currentLocation != NULL)
+    {
+        found = true;
+        listData = listData->next;
+        delete previousLocation;
+        length--;
+    }
+    else
+    {
+        previousLocation = currentLocation;
+        currentLocation = currentLocation->next;
+        bool moreToSearch = (currentLocation != NULL);
+        while(moreToSearch && !found)
+        {
+            if(item == currentLocation->info)
+            {
+                found = true;
+                NodeType * locationToDelete = currentLocation;
+                previousLocation->next = currentLocation->next;
+                locationToDelete->next = NULL;
+                delete locationToDelete;
+                length--;
+            }
+            else
+            {
+                previousLocation = currentLocation;
+                currentLocation = currentLocation->next;
+                moreToSearch = (currentLocation != NULL);
+            }
+        }
+    }
+}
 
