@@ -39,3 +39,12 @@ bool UnsortedType<ItemType>::is_full()
     }
     return false;
 }
+template <class ItemType>
+void UnsortedType<ItemType>::put_item(ItemType item)
+{
+    NodeType* localtion = new NodeType;
+    localtion->info = item;
+    localtion->next = listData;
+    listData = localtion;
+    length++;
+}

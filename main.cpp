@@ -12,6 +12,7 @@ int main()
         cout<<"list is full"<<endl;
     else
         cout<<"list is not full"<<endl;
+    Mylist.put_item(4);
 
 
     return 0;
