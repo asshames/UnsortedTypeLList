@@ -10,6 +10,7 @@ class UnsortedType
         NodeType* next = NULL;
     };
 public:
+
     UnsortedType();
     ~UnsortedType();
 
@@ -25,6 +26,7 @@ private:
     int length;
     NodeType* listData;
     NodeType* currentPosition;
+
 };
 
 
