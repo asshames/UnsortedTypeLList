@@ -23,3 +23,19 @@ int UnsortedType<ItemType>::get_length()
 {
     return length;
 }
+
+template <class ItemType>
+bool UnsortedType<ItemType>::is_full()
+{
+    NodeType* location = NULL;
+    try
+    {
+        location = new NodeType;
+        delete location;
+    }
+    catch(bad_alloc exception)
+    {
+        return true;
+    }
+    return false;
+}
