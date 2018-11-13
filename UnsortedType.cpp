@@ -140,3 +140,18 @@ bool UnsortedType<ItemType>::delete_item(ItemType item)
     }
 }
 
+template <class ItemType>
+ItemType UnsortedType<ItemType>:: get_next_item()
+{
+    if(currentPosition == NULL)
+        currentPosition = listData;
+    else
+        currentPosition = currentPosition->next;
+    if(currentPosition == NULL)
+    {
+        cout<<"Reached at the end of the list " <<endl;
+        cout<<"Print garbage value"<<endl;
+        return ItemType();
+    }
+    return currentPosition->info;
+}
