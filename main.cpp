@@ -13,6 +13,8 @@ int main()
     else
         cout<<"list is not full"<<endl;
     Mylist.put_item(4);
+    bool flag;
+    Mylist.get_item(4,flag);
 
 
     return 0;
