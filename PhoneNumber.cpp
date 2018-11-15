@@ -30,7 +30,7 @@ ItemType PhoneNumber<ItemType>::get_phone()
 template<class ItemType>
 void PhoneNumber<ItemType>::set_phone(ItemType phone)
 {
-    phoneNumber = phone;
+    this->phoneNumber = phone;
 }
 
 template<class ItemType>

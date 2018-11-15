@@ -3,146 +3,162 @@
 
 using namespace std;
 
-template<class ItemType>
-void Person<ItemType>::set_nationaID(ItemType nID)
+
+void Person::set_nationaID(string nID)
 {
     nationalID = nID;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_name(ItemType nam)
+
+void Person::set_name(string nam)
 {
     name = nam;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_father_name(ItemType fName)
+
+void Person::set_father_name(string fName)
 {
     fatherName =  fName;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_mother_name(ItemType mName)
+
+void Person::set_mother_name(string mName)
 {
     motherName = mName;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_marital_status(ItemType mStatus)
+
+void Person::set_marital_status(string mStatus)
 {
     maritalStatus = mStatus;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_spouse_name(ItemType sName)
+
+void Person::set_spouse_name(string sName)
 {
     spouseName = sName;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_present_address(ItemType preAddress)
+
+void Person::set_present_address(string preAddress)
 {
     presentAddress = preAddress;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_permanent_address(ItemType perAddress)
+
+void Person::set_permanent_address(string perAddress)
 {
     presentAddress = perAddress;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_height(ItemType hayt)
+
+void Person::set_height(double height)
 {
-    height = hayt;
+    this->height = height;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_weight(int wayt)
+
+void Person::set_weight(int weight)
 {
-    weight = wayt;
+    this->weight = weight;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_eye_color(ItemType eColor)
+
+void Person::set_eye_color(string eColor)
 {
     eyeColor = eColor;
 }
 
-template<class ItemType>
-void Person<ItemType>::set_hair_color(ItemType hColor)
+
+void Person::set_hair_color(string hColor)
 {
     hairColor = hColor;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_nationaID()
+
+string Person::get_nationalID()
 {
     return nationalID;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_name()
+
+string Person::get_name()
 {
     return name;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_father_name()
+
+string Person::get_father_name()
 {
     return fatherName;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_mother_name()
+
+string Person::get_mother_name()
 {
     return motherName;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_marital_status()
+
+string Person::get_marital_status()
 {
     return maritalStatus;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_spouse_name()
+
+string Person::get_spouse_name()
 {
     return spouseName;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_present_address()
+
+string Person::get_present_address()
 {
     return presentAddress;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_permanent_address()
+
+string Person::get_permanent_address()
 {
     return permanentAddress;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_height()
+
+double Person::get_height()
 {
     return height;
 }
 
-template<class ItemType>
-int Person<ItemType>::get_weight()
+
+int Person::get_weight()
 {
     return weight;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_eye_color()
+
+string Person::get_eye_color()
 {
     return eyeColor;
 }
 
-template<class ItemType>
-ItemType Person<ItemType>::get_hair_color()
+
+string Person::get_hair_color()
 {
     return hairColor;
 }
+
+
+void Person::print()
+{
+    cout << "-------------------------------------------------" << endl;
+
+    cout << "Name: " << this->name << endl;
+    cout << "National ID: " << this->nationalID << endl;
+    cout << "National ID: " << this->fatherName << endl;
+    cout << "National ID: " << this->motherName << endl;
+    cout << "National ID: " << this->maritialStatus << endl;
+    cout << "National ID: " << this->spouseName << endl;
+    cout << "National ID: " << this->presentAddress << endl;
+
+}
+

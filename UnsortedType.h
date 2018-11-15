@@ -1,5 +1,8 @@
 #ifndef UNSORTEDTYPE_H_INCLUDED
 #define UNSORTEDTYPE_H_INCLUDED
+#include <iostream>
+
+using namespace std;
 
 template<class ItemType>
 class UnsortedType
