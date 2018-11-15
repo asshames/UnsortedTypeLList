@@ -24,13 +24,13 @@ ItemType PhoneNumber<ItemType>::get_oparator()
 template<class ItemType>
 ItemType PhoneNumber<ItemType>::get_phone()
 {
-    return this->phoneNumber;
+    return phoneNumber;
 }
 
 template<class ItemType>
 void PhoneNumber<ItemType>::set_phone(ItemType phone)
 {
-    this->phoneNumber = phone;
+    phoneNumber = phone;
 }
 
 template<class ItemType>

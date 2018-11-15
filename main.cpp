@@ -1,6 +1,7 @@
 #include <iostream>
 #include "UnsortedType.cpp"
 #include "PhoneNumber.cpp"
+#include "Person.cpp"
 
 using namespace std;
 
@@ -37,6 +38,11 @@ int main()
     Num.set_phone("01760603847");
     cout<<"get phone: "<<Num.get_phone()<<endl;
 
+    Person<string> name;
+    name.set_nationaID("0123698745");
+    cout<<"get nid: "<<name.get_nationaID()<<endl;
+    name.set_weight(80);
+    cout<<"get nid: "<<name.get_weight()<<endl;
 
 
     return 0;
