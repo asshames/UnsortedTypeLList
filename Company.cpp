@@ -5,3 +5,9 @@ Company::Company(string name){
     this->name= name;
 }
 
+Company::printCustomers(){
+
+
+
+
+}

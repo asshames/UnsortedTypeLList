@@ -6,9 +6,6 @@
 
 using namespace std;
 
-//Have another class to hold the company information.
-//Because a company may have multiple customers.
-
 class Customer : public Person
 {
 private:

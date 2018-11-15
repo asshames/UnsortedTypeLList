@@ -28,14 +28,6 @@ void Customer::get_phone_numbers()
 
 void Customer::get_operators()
 {
-    //Instructor Comments:
-    //This is get_operator function.
-    //are you getting the operator for a phone?
-    //You are calling phone.get_phone() which is returning your number.
-    //This function wont work as intended.
-    //This is an overlooked bug
-    //Minor issue, -0.5.
-    //Fix the bug.
     int counter= 1;
 
     for(PhoneNumber phone : this->phone){
@@ -65,16 +57,8 @@ bool Customer::change_operator(string phoneNumber,string newOparator){
 }
 
 
-// helper function
-int Customer::delete_phone(string phoneNumber){
 
-    //Instructor Comments:
-    //Major bug found.
-    //Return type int. only returns from inside the loop.
-    //This code wont compile.
-    //Penalty: -5.
-    //Change the function signature.
-    //This function should return only bool.
+int Customer::delete_phone(string phoneNumber){
 
     for(int index=0;index<phone.size();index++){
         if(phone[index].get_phone()==phoneNumber){
