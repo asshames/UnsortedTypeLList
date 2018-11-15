@@ -2,6 +2,7 @@
 #define CUSTOMER_H_INCLUDED
 
 #include "Person.h"
+#include "UnsortedType.cpp"
 #include <iostream>
 
 using namespace std;
@@ -9,7 +10,7 @@ using namespace std;
 class Customer : public Person
 {
 private:
-    vector<PhoneNumber> phone;
+    UnsortedType<PhoneNumber> phone;
 public:
     Customer(string nid,string phone,string oparator);
     int get_phone_size();
