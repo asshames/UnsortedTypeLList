@@ -1,5 +1,6 @@
 #include <iostream>
-#include"UnsortedType.cpp"
+#include "UnsortedType.cpp"
+#include "PhoneNumber.cpp"
 
 using namespace std;
 
@@ -28,6 +29,14 @@ int main()
     else
         cout<<"Item is not delete"<<endl;
     cout<<"item: "<<Mylist.get_next_item()<<endl;
+
+    PhoneNumber<string> Num;
+    Num.set_oparator(": gp");
+    cout<<"get Oparator"<<Num.get_oparator()<<endl;
+
+    Num.set_phone("01760603847");
+    cout<<"get phone: "<<Num.get_phone()<<endl;
+
 
 
     return 0;
