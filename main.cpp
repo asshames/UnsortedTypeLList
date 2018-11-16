@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
 
-    UnsortedType<int> Mylist;
+    /*UnsortedType<int> Mylist;
     cout<<"Length: "<<Mylist.get_length()<<endl;
     if(Mylist.is_full())
         cout<<"list is full"<<endl;
@@ -43,6 +43,18 @@ int main()
     cout<<"get nid: "<<name.get_nationaID()<<endl;
     name.set_weight(80);
     cout<<"get nid: "<<name.get_weight()<<endl;
+
+*/
+
+    Company robi("robi");
+
+
+
+
+
+
+
+
 
 
     return 0;

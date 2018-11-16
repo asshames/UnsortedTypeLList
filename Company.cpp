@@ -6,9 +6,6 @@ Company::Company(string name){
     this->name= name;
 }
 
-Customer Company::search_by_id(){
-
-}
 
 void Company::printCustomers(){
 
@@ -16,6 +13,7 @@ void Company::printCustomers(){
 
     for(int i=0;i<len;i++){
         Customer temp= Customers.get_next_item();
-
+        temp.print();
+        temp.print_customer_info();
     }
 }

@@ -5,20 +5,29 @@
 using namespace std;
 
 Customer::Customer(string nid,string phone,string oparator): Person(nid){
-    this->phone.push_back(PhoneNumber(phone,oparator));
+    this->phone.put_item(PhoneNumber(phone,oparator));
 }
 
 
 void Customer::insert_phone_oparator(string phone,string oparator)
 {
     if(phone.size()<15){
-        this->phone.push_back(PhoneNumber(phone,oparator));
+        this->phone.put_item(PhoneNumber(phone,oparator));
     }
 }
 
 void Customer::get_phone_numbers()
 {
     int counter= 1;
+
+    int length= phone.get_length();
+
+    for(int index=0;index<length;index++){
+        bool isRetrived= false;
+        PhoneNumber temp;
+
+        phone.get_item(PhoneNumber,isRetrived);
+    }
 
     for(PhoneNumber phone : this->phone){
         cout << "Phone Number " << counter << ": " << phone.get_phone() << endl;
