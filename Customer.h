@@ -1,5 +1,6 @@
-#ifndef CUSTOMER_H_INCLUDED
-#define CUSTOMER_H_INCLUDED
+#ifndef CUSTOMER_H
+#define CUSTOMER_H
+
 
 #include "Person.h"
 #include "PhoneNumber.h"
@@ -25,4 +26,6 @@ public:
     int delete_phone(string phoneNumber);
 };
 
-#endif // CUSTOMER_H_INCLUDED
+
+
+#endif // CUSTOMER_H
