@@ -1,7 +1,7 @@
 #include "UnsortedType.h"
 #include <iostream>
 #include <exception>
-
+#pragma once
 using namespace std;
 
 template <class ItemType>
@@ -138,6 +138,8 @@ bool UnsortedType<ItemType>::delete_item(ItemType item)
             }
         }
     }
+
+    return found;
 }
 
 template <class ItemType>

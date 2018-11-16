@@ -48,7 +48,8 @@ int main()
 
     Company robi("robi");
 
-
+    robi.insert_customer(Customer("12345678910","01833975394","Robi"));
+    robi.printCustomers();
 
 
 

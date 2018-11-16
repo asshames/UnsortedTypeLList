@@ -2,12 +2,20 @@
 #include "Customer.h"
 #include <iostream>
 
-Company::Company(string name){
-    this->name= name;
+using namespace std;
+
+Company::Company(string companyName){
+    this->companyName= companyName;
+}
+
+void Company::insert_customer(Customer c){
+
+    Customers.put_item(c);
+
 }
 
 
-void Company::printCustomers(){
+void Company::print_customers(){
 
     int len= Customers.get_length();
 

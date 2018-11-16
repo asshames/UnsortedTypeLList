@@ -1,18 +1,23 @@
 #ifndef COMPANY_H_INCLUDED
 #define COMPANY_H_INCLUDED
 
+#include <iostream>
 #include "UnsortedType.cpp"
+#include "Customer.h"
+
+using namespace std;
 
 class Company{
 
 private:
 
-    string company_name;
+    string companyName;
     UnsortedType<Customer> Customers;
 
 public:
-    Company();
-    void printCustomers();
+    Company(string companyName);
+    void insert_customer(Customer c);
+    void print_customers();
 
 };
 

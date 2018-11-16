@@ -2,8 +2,11 @@
 #define CUSTOMER_H_INCLUDED
 
 #include "Person.h"
+#include "PhoneNumber.h"
 #include "UnsortedType.cpp"
 #include <iostream>
+
+#pragma once
 
 using namespace std;
 
