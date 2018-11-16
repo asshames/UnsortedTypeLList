@@ -32,6 +32,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Company.cpp" />
+		<Unit filename="Company.h" />
+		<Unit filename="Customer.cpp" />
+		<Unit filename="Customer.h" />
+		<Unit filename="Person.cpp" />
+		<Unit filename="Person.h" />
 		<Unit filename="PhoneNumber.cpp" />
 		<Unit filename="PhoneNumber.h" />
 		<Unit filename="UnsortedType.cpp" />

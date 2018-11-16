@@ -3,38 +3,54 @@
 
 using namespace std;
 
-template<class ItemType>
-PhoneNumber<ItemType>::PhoneNumber()
+
+PhoneNumber<string>::PhoneNumber()
 {
 
 }
 
-template<class ItemType>
-PhoneNumber<ItemType>::PhoneNumber(ItemType oparator)
+
+PhoneNumber<string>::PhoneNumber(string oparator,string phoneNumber)
 {
-    this->oparator= oparator;
+    for(int index=0;index<5;index++)
+    {
+        if(oparator==allowedOperators[index])
+        {
+            this->oparator= oparator;
+            this->phoneNumber= phoneNumber;
+        }
+    }
 }
 
-template<class ItemType>
-ItemType PhoneNumber<ItemType>::get_oparator()
+
+string PhoneNumber<string>::get_oparator()
 {
     return this->oparator;
 }
 
-template<class ItemType>
-ItemType PhoneNumber<ItemType>::get_phone()
+
+string PhoneNumber<string>::get_phone()
 {
     return phoneNumber;
 }
 
-template<class ItemType>
-void PhoneNumber<ItemType>::set_phone(ItemType phone)
+
+/*void PhoneNumber<string>::set_phone(string phone)
 {
     this->phoneNumber = phone;
-}
+}*/
 
-template<class ItemType>
-void PhoneNumber<ItemType>::set_oparator(ItemType oparator)
+
+bool PhoneNumber<string>::set_oparator(string oparator)
 {
-    this->oparator = oparator;
+    for(int index=0;index<5;index++)
+    {
+        if(oparator==allowedOperators[index])
+        {
+            this->oparator= oparator;
+            return true;
+        }
+    }
+
+    return false;
 }

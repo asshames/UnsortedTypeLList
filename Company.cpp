@@ -6,7 +6,11 @@ Company::Company(string name){
     this->name= name;
 }
 
-Company::printCustomers(){
+Customer Company::search_by_id(){
+
+}
+
+void Company::printCustomers(){
 
     int len= Customers.get_length();
 

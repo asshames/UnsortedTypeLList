@@ -4,20 +4,20 @@
 
 using namespace std;
 
-template<class ItemType>
 class PhoneNumber
 {
 public:
     PhoneNumber();
-    PhoneNumber(ItemType oparator);
-    void set_phone(ItemType phone);
-    void set_oparator(ItemType oparator);
-    ItemType get_oparator();
-    ItemType get_phone();
+    PhoneNumber(string oparator,string phoneNumber);
+    //void set_phone(string phone);
+    bool set_oparator(string oparator);
+    string get_oparator();
+    string get_phone();
 
 private:
-    ItemType phoneNumber;
-    ItemType oparator;
+    string phoneNumber;
+    string oparator;
+    string allowedOperators[5]= {"GP","Robi","BanglaLink","Teletalk","KomKothaKoiben"};
 };
 
 #endif // PHONENUMBER_H_INCLUDED
